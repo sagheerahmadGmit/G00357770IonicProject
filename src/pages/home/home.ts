@@ -11,4 +11,14 @@ export class HomePage {
 
   }
 
+  openMenuPage()
+  {
+    this.navCtrl.push('MenuPage');
+  }
+
+  openAboutUsPage()
+  {
+    this.navCtrl.push('AboutUsPage');
+  }
+
 }

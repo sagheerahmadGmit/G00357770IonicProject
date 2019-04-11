@@ -1,14 +1,17 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Restaurant Menu
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding class="bg">
+  <img src="../../assets/imgs/menu3.png" height="200" width="200">
+  <br><br><br><br>
+  <button (click)="openMenuPage()" ion-button round class="button1">Restaurant Menu</button>
+  <br><br>
+  <button (click)="openRecipePage()" ion-button round>Recommended Recipes</button>
+  <br><br>
+  <button (click)="openAboutUsPage()" ion-button round>About Us</button>
 </ion-content>
