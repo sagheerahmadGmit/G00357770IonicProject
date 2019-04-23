@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Recipes
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bg">
+  <ion-list>
+    <ion-item *ngFor="let recipe of recipes">
+     <h1>{{recipe.results.title}}</h1>
+     <!-- <p>{{movie.Year}}</p>
+     <ion-img height="200" width="200" src="{{movie.Poster}}"></ion-img> -->
+    </ion-item>
+  </ion-list>
+</ion-content>

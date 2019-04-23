@@ -16,11 +16,40 @@ import {MenuPage} from '../menu/menu'
 })
 export class DessertsPage {
 
+  dessert: any;
+  public dessertPageCost: number;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad DessertsPage');
+
+  openDrinksPage()
+  {
+    this.navCtrl.push('DrinksPage');
+  }
+
+  dessert1()
+  {
+    localStorage.dessert = JSON.stringify("Rocky Road Brownie");
+    this.dessertPageCost = 5.99;
+  }
+
+  dessert2()
+  {
+    localStorage.dessert = JSON.stringify("Fluffy Fruit Cake");
+    this.dessertPageCost = 4.99;
+  }
+
+  dessert3()
+  {
+    localStorage.dessert = JSON.stringify("White Chocolate Cheesecake");
+    this.dessertPageCost = 5.99;
+  }
+
+  dessert4()
+  {
+    localStorage.dessert = JSON.stringify("Fruit Dessert Pizza");
+    this.dessertPageCost = 7.99;
   }
 
 }

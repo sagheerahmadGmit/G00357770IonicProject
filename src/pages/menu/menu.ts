@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {DessertsPage} from '../desserts/desserts'
+import { stringify } from '@angular/core/src/util';
 
 /**
  * Generated class for the MenuPage page.
@@ -16,7 +17,8 @@ import {DessertsPage} from '../desserts/desserts'
 })
 export class MenuPage {
 
-  order: any;
+  order: string;
+  mainCourseCost: number;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -28,6 +30,41 @@ export class MenuPage {
   dessertsPage()
   {
     this.navCtrl.push('DessertsPage');
+  }
+
+  mainOrder1()
+  {
+    localStorage.order = JSON.stringify("Breakfast Burger");
+  }
+
+  mainOrder2()
+  {
+    localStorage.order = JSON.stringify("Seared Steak with Fries");
+  }
+
+  mainOrder3()
+  {
+    localStorage.order = JSON.stringify("Scotch sirloin steak");
+  }
+
+  mainOrder4()
+  {
+    localStorage.order = JSON.stringify("Vegetarian Bean Burger");
+  }
+
+  mainOrder5()
+  {
+    localStorage.order = JSON.stringify("Pasta with Meatballs");
+  }
+
+  mainOrder6()
+  {
+    localStorage.order = JSON.stringify("Chicken fillet Burger Meal");
+  }
+
+  mainOrder7()
+  {
+    localStorage.order = JSON.stringify("Double Quarter Pounder Burger");
   }
 
 }

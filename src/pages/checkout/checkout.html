@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>checkout</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bg">
+
+  <img src="../../assets/imgs/waiter.jpg" height="300" width="300">
+
+  <br><br>
+
+  <h4>Welcome to your checkout page. These are the following things you have ordered.
+    Please confirm or press cancel to start again. Thank You. 
+  </h4>
+  <br><br>
+
+  <h5>Main Course: {{mainCourse}}</h5>
+  <h5>Dessert: {{dessert}}</h5>
+  <h5>Drink: {{drink}}</h5>
+
+  <br><br>
+  <button (click)="homePage()" ion-button round>Cancel Order</button>
+  
+  </ion-content>

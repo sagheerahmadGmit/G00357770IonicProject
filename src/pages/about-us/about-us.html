@@ -13,6 +13,14 @@
   Our meat and produce is 100% Irish and fresh. 
   The food is locally sourced and benefits multiple local businesses. 
   We hope you enjoy the food!!"</h4>
+  
+  <br>
+
+  <button (click)="getLocation()" ion-button round>Get Location</button>  
+
+  <h4 [hidden] = "hide">You can find us at these Co-Ordinates!</h4>
+  <h4 [hidden] = "hide">Latitude: {{lat}}</h4>
+  <h4 [hidden] = "hide">Longitude: {{long}}</h4>
 
   <button (click)="homePage()" ion-button round>Home Page</button>
 
