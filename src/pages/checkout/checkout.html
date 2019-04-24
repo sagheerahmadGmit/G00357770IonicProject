@@ -5,7 +5,7 @@
 </ion-header>
 
 <ion-content padding class="bg">
-
+  <!-- image of waiter -->
   <img src="../../assets/imgs/waiter.jpg" height="300" width="300">
 
   <br><br>
@@ -14,12 +14,16 @@
     Please confirm or press cancel to start again. Thank You. 
   </h4>
   <br><br>
-
-  <h5>Main Course: {{mainCourse}}</h5>
-  <h5>Dessert: {{dessert}}</h5>
-  <h5>Drink: {{drink}}</h5>
+  <!-- Get the food options from localstorage and print them out -->
+  <h5><b>Main Course:</b> {{mainCourse}}</h5>
+  <h5><b>Dessert:</b> {{dessert}}</h5>
+  <h5><b>Drink:</b> {{drink}}</h5>
 
   <br><br>
+  <!-- Confirm order and go to login page -->
+  <button (click)="payPage()" ion-button round>Confirm Order</button>
+  <br><br>
+  <!-- Cancel order and go home to start again -->
   <button (click)="homePage()" ion-button round>Cancel Order</button>
   
   </ion-content>

@@ -1,8 +1,11 @@
-page-drinks {
+page-map {
+    //setting the map to 100%
+    #map{
+        height: 100%;
+    }
 //page background color and all text aligned to the center
     .bg{
         background-color: palevioletred;
         text-align: center;
     }
-
 }

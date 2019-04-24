@@ -3,10 +3,11 @@
     <ion-title>desserts</ion-title>
   </ion-navbar>
 </ion-header>
-
+<!-- Desserts Page -->
 <ion-content padding class="bg">
   <h1>Desserts</h1>
   <br>
+  <!-- Images of all the desserts with the price and name -->
   <img src="../../assets/imgs/brownie.jpg" (click)="openDrinksPage()" (click)="dessert1()" height="200" width="200">
   <h6>Rocky Road Brownie topped off with marshmallows and a scoop of ice cream</h6>
   <h6>Price: 5.99$</h6>
@@ -22,5 +23,8 @@
   <img src="../../assets/imgs/dessertPizza.jpg" (click)="openDrinksPage()" (click)="dessert4()" height="200" width="200">
   <h6>12" Dessert pizza with fresh fruits</h6>
   <h6>Price: 7.99$</h6>
-  <br><hr>
+  <br><hr><br>
+ 
+  <button (click)="goBack()" ion-button round>Back</button>
+
 </ion-content>

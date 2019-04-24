@@ -4,9 +4,11 @@
   </ion-navbar>
 </ion-header>
 
+<!-- Drinks Page -->
 <ion-content padding class="bg">
   <h1>Drinks</h1>
   <br>
+  <!-- Images of all the drinks with the price and name -->
   <img src="../../assets/imgs/coke.jpg" (click)="openCheckout()" (click)="drink1()" height="200" width="200">
   <h6>Bottle of Coke</h6>
   <h6>Price: 2.50$</h6>
@@ -38,5 +40,6 @@
   <img src="../../assets/imgs/tapwater2.jpg" (click)="openCheckout()" (click)="drink8()" height="200" width="200">
   <h6>Jug of Tap Water</h6>
   <h6>Price: Free</h6>
-  <br><hr>
+  <br><hr><br>
+  <button (click)="goBack()" ion-button round>Back</button>
 </ion-content>

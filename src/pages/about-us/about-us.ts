@@ -16,22 +16,26 @@ import { Geolocation } from '@ionic-native/geolocation/ngx';
 })
 export class AboutUsPage {
 
+ // Decalare variables
   lat: any;
   long: any;
 
   hide: boolean = true;
 
+  //add location plugin to parameters
   constructor(public navCtrl: NavController, public navParams: NavParams, public geolocation: Geolocation) {
   }
 
+  //go back home
   homePage()
   {
     this.navCtrl.pop();
   }
 
+  // get the co-ordinates from the location plugin
   getLocation()
   {
-
+    //if message is hidden then show else hide them again
     if(this.hide == true)
     {
       this.hide = false;
@@ -44,7 +48,7 @@ export class AboutUsPage {
     }
     else
     {
-      this.hide = true;
+      this.hide = true;//hide the message again
     }
   }
 

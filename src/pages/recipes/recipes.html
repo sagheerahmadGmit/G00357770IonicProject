@@ -5,13 +5,15 @@
     </ion-title>
   </ion-navbar>
 </ion-header>
-
+<!-- Recipes Page -->
 <ion-content padding class="bg">
   <ion-list>
+    <!-- Output the api to the page using json -->
     <ion-item *ngFor="let recipe of recipes">
-     <h1>{{recipe.results.title}}</h1>
-     <!-- <p>{{movie.Year}}</p>
-     <ion-img height="200" width="200" src="{{movie.Poster}}"></ion-img> -->
+     <h1>{{recipe.Title}}</h1>
+     <p>{{recipe.Year}}</p>
+     <ion-img height="200" width="200" src="{{recipe.Poster}}"></ion-img>
+     <!-- <p>{{recipe.href}}</p> -->
     </ion-item>
   </ion-list>
 </ion-content>

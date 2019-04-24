@@ -11,19 +11,22 @@ export class HomePage {
 
   }
 
+  //Open up the main courses
   openMainPage()
   {
     this.navCtrl.push('MenuPage');
   }
 
+  //open up the about us page
   openAboutUsPage()
   {
     this.navCtrl.push('AboutUsPage');
   }
 
-  openRecipePage()
+  //open the location page, contact us page
+  openLocationPage()
   {
-    this.navCtrl.push('RecipesPage');
+    this.navCtrl.push('MapPage');
   }
 
 }

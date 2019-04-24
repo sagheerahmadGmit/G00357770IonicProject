@@ -3,10 +3,11 @@
     <ion-title>Main Courses</ion-title>
   </ion-navbar>
 </ion-header>
-
+<!-- Main Course Page -->
 <ion-content padding class="bg">
     <h1>Welcome to our Restaurant</h1>
     <br>
+    <!-- Images of diffrent main courses with the price and name -->
     <img (click)="dessertsPage()" (click)="mainOrder1()" src="../../assets/imgs/breakfastburger.jpg" height="200" width="200">
     <h6>Breakfast Burger</h6>
     <h6>Price: 15.99$</h6>
@@ -34,5 +35,6 @@
     <img (click)="dessertsPage()" (click)="mainOrder7()" src="../../assets/imgs/burger1.jpg" height="200" width="200">
     <h6>Double Quarter Pounder Burger</h6>
     <h6>Price: 14.99$</h6>
-
+    <br><br>
+    <button (click)="goBack()" ion-button round>Back</button>
 </ion-content>

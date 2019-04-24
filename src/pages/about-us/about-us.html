@@ -8,20 +8,24 @@
 <ion-content padding class="bg">
 <h1>About Us!!</h1>
 <br><br>
+<!-- image of farmer -->
 <img src="../../assets/imgs/farmer.jpg" height="250" width="300">
+
 <h4>We are delighted to have you with us. 
   Our meat and produce is 100% Irish and fresh. 
   The food is locally sourced and benefits multiple local businesses. 
   We hope you enjoy the food!!"</h4>
   
   <br>
-
+  <!-- Use the geolocation plugin to get the latitude and Longitude co-ordinates -->
   <button (click)="getLocation()" ion-button round>Get Location</button>  
 
+  <!-- The co-ordinates are hidden until the user clicks the button -->
   <h4 [hidden] = "hide">You can find us at these Co-Ordinates!</h4>
   <h4 [hidden] = "hide">Latitude: {{lat}}</h4>
   <h4 [hidden] = "hide">Longitude: {{long}}</h4>
 
+  <!-- Go back home -->
   <button (click)="homePage()" ion-button round>Home Page</button>
 
 </ion-content>
