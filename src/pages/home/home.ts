@@ -29,4 +29,9 @@ export class HomePage {
     this.navCtrl.push('MapPage');
   }
 
+  // openMoviePage()
+  // {
+  //   this.navCtrl.push('RecipesPage');
+  // }
+
 }

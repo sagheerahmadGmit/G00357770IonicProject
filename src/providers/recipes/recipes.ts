@@ -15,7 +15,7 @@ export class RecipesProvider {
     console.log('Hello RecipesProvider Provider');
   }
 //the recipe api
-  GetRecipes():Observable<any>{
+  GetMovies():Observable<any>{
     return this.http.get("http://www.omdbapi.com/?apikey=7aa21a29&s=food");
   }
   //all the different apis i tried to use but none worked

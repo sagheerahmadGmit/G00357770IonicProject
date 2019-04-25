@@ -9,10 +9,10 @@
 <ion-content padding class="bg">
   <ion-list>
     <!-- Output the api to the page using json -->
-    <ion-item *ngFor="let recipe of recipes">
-     <h1>{{recipe.Title}}</h1>
-     <p>{{recipe.Year}}</p>
-     <ion-img height="200" width="200" src="{{recipe.Poster}}"></ion-img>
+    <ion-item *ngFor="let movie of movies">
+     <h1>{{movie.Title}}</h1>
+     <p>{{movie.Year}}</p>
+     <ion-img height="200" width="200" src="{{movie.Poster}}"></ion-img>
      <!-- <p>{{recipe.href}}</p> -->
     </ion-item>
   </ion-list>
