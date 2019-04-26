@@ -38,13 +38,13 @@ export class AboutUsPage {
     //if message is hidden then show else hide them again
     if(this.hide == true)
     {
-      this.hide = false;
       let watch = this.geolocation.watchPosition();
       watch.subscribe((data) => {
       // data can be a set of coordinates, or an error (if an error occurred).
       this.lat = data.coords.latitude
       this.long = data.coords.longitude
       });
+      this.hide = false;
     }
     else
     {

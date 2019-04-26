@@ -9,7 +9,6 @@ import { Observable } from 'rxjs';
 import { HttpClientModule } from '@angular/common/http';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { RecipesProvider } from '../providers/recipes/recipes';
 //import { GoogleMapsComponent } from '../components/google-maps/google-maps';
 // import { DessertsPage } from '../pages/desserts/desserts';
 // import { MenuPage } from '../pages/menu/menu';
@@ -41,7 +40,6 @@ import { RecipesProvider } from '../providers/recipes/recipes';
     SplashScreen,
     Geolocation,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    RecipesProvider
   ]
 })
 export class AppModule {}
