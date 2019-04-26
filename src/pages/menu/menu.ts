@@ -73,6 +73,6 @@ export class MenuPage {
   goBack()
   {
     this.navCtrl.pop()
-  }
+  }//go back home
 
 }
